@@ -77,32 +77,49 @@
 
 
     <div style="
-    background-image: url('background-image.jpg'); /* Replace with your background image URL */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px; /* Increased padding for more space inside */
     position: relative;
-    text-align: center;
-    height: 600px; /* Increased height */
+    height: 600px; /* Height of the container */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    color: black;
 ">
+    <!-- Blurred Background Image -->
     <div style="
-        font-size: 4rem; 
-        font-weight: bold;
-        margin-bottom: 15px; 
-    ">
-        MADE FOR DESIGNERS
-    </div>
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('background-image.jpeg'); /* Replace with your background image URL */
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px); /* Blur the background image */
+        z-index: 1;
+    "></div>
+
+    <!-- Content on top of blurred background -->
     <div style="
-        font-size: 1.5rem; 
-        margin-top: 15px;
+        position: relative;
+        z-index: 2; /* Ensure the text is above the background */
     ">
-    create your portfolio in minute with.....
+    <!-- Content on top of the blurred background -->
+    <div class="position-relative z-index-2" style="max-width: 1000px;"> <!-- Set max-width for proper line breaks -->
+        <h1 class="display-4 fw-bold text-white mb-3">
+            Welcome to Our Services
+        </h1>
+        <p class="fs-5 text-white mb-4">
+            We deliver the best solutions, tailored to your needs. Our experts provide exceptional services
+            and support, ensuring your complete satisfaction.
+        </p>
+        <!-- Green Button -->
+        <a href="#" class="btn btn-success btn-lg">Learn More</a>
     </div>
 </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
