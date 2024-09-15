@@ -10,117 +10,190 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Top Bar -->
-    <div style="background-color: #f8f9fa; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; align-items: center;">
-            <a href="mailto:example@gmail.com" style="margin-right: 15px; color: #000; text-decoration: none;">
-                <i class="fas fa-envelope"></i> example@gmail.com
-            </a>
-            <a href="tel:+1234567890" style="margin-right: 15px; color: #000; text-decoration: none;">
-                <i class="fas fa-phone"></i> +123 456 7890
-            </a>
+     <div>
+        <div class="bg-light  shadow-sm" style="padding: 10px 200px;">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <a href="mailto:example@gmail.com" class="text-dark text-decoration-none me-3">
+                        <i class="fas fa-envelope"></i> example@gmail.com
+                    </a>
+                    <a href="tel:+1234567890" class="text-dark text-decoration-none me-3">
+                        <i class="fas fa-phone"></i> +123 456 7890
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark fs-4 me-3" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-dark fs-4 me-3" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-dark fs-4 me-3" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-dark fs-4" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div style="display: flex; align-items: center;">
-            <a href="#" style="font-size: 1.2rem; margin-right: 15px; color: #000; text-decoration: none;" title="Facebook">
-                <i class="fab fa-facebook-f"></i>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-green" style="padding: 10px 200px;">
+            <a class="navbar-brand mx-auto" href="#">
+                <h1 class="m-0">REEN.</h1>
             </a>
-            <a href="#" style="font-size: 1.2rem; margin-right: 15px; color: #000; text-decoration: none;" title="Twitter">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" style="font-size: 1.2rem; margin-right: 15px; color: #000; text-decoration: none;" title="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#" style="font-size: 1.2rem; color: #000; text-decoration: none;" title="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEGA MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <!-- Search Icon -->
+                <a href="#" class="text-dark fs-4 ms-3">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+     </div>
+    
+
+    <!-- Background Image Section -->
+    <div class="position-relative text-center py-5" style="height: 600px;">
+        <!-- Blurred Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="
+            background-image: url('background-image.jpeg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(3px);
+            z-index: 1;
+        "></div>
+
+        <!-- Content on top of blurred background -->
+        <div class="position-relative z-index-2 d-flex flex-column justify-content-center align-items-center text-white" style="z-index: 2; max-width: 800px; margin: 0 auto;">
+            <h1 class="display-4 fw-bold mb-3">
+                Welcome to Our Services
+            </h1>
+            <p class="fs-5 mb-4">
+                We deliver the best solutions, tailored to your needs. Our experts provide exceptional services
+                and support, ensuring your complete satisfaction.
+            </p>
+            <!-- Green Button -->
+            <a href="#" class="btn btn-success btn-lg">Get Started Now</a>
         </div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex; justify-content: center; align-items: center; padding: 0 15px;">
-        <a class="navbar-brand" href="#" style="margin-left: 300px;">
-            <h1 style="margin: 0;">REEN.</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; justify-content: center; flex-grow: 1;">
-            <ul class="navbar-nav" style="display: flex; align-items: center; margin-bottom: 0;">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME <span class="visually-hidden">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">PAGES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">FEATURES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">MEGA MENU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Search Icon -->
-        <a href="#" style="color: black; font-size: 1.5rem; margin-left: 200px; margin-right: 300px;">
-            <i class="fas fa-search"></i>
-        </a>
-    </nav>
-
-
-    <div style="
-    position: relative;
-    height: 600px; /* Height of the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 100px;
-    color: black;
-">
-    <!-- Blurred Background Image -->
-    <div style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('background-image.jpeg'); /* Replace with your background image URL */
-        background-size: cover;
-        background-position: center;
-        filter: blur(3px); /* Blur the background image */
-        z-index: 1;
-    "></div>
-
-    <!-- Content on top of blurred background -->
-    <div style="
-        position: relative;
-        z-index: 2; /* Ensure the text is above the background */
-    ">
-    <!-- Content on top of the blurred background -->
-    <div class="position-relative z-index-2" style="max-width: 1000px;"> <!-- Set max-width for proper line breaks -->
-        <h1 class="display-4 fw-bold text-white mb-3">
-            Welcome to Our Services
-        </h1>
-        <p class="fs-5 text-white mb-4">
-            We deliver the best solutions, tailored to your needs. Our experts provide exceptional services
-            and support, ensuring your complete satisfaction.
+   
+    <!-- New Section with Beautiful. Clean. Responsive -->
+    <div class="container text-center py-5">
+        <!-- Main Heading -->
+        <h2 class="mb-4" style="color:#506a85;">Beautiful. Clean. Responsive.</h2>
+        
+        <!-- Main Paragraph -->
+        <p class="lead mb-5 custom-paragraph">
+            Our designs are not just visually appealing but also functional, responsive, and user-friendly, 
+            providing a seamless experience across all devices.
         </p>
-        <!-- Green Button -->
-        <a href="#" class="btn btn-success btn-lg">Learn More</a>
+
+        <!-- Three Columns for Passion, Creativity, and Quality -->
+        <div class="row justify-content-center">
+            <!-- Passion Column -->
+            <div class="col-md-4 mb-4">
+                <h3 style="color:#506a85;">
+                    <i class="fas fa-heart text-success"></i> Passion
+                </h3>
+                <p>
+                    We are passionate about crafting designs that not only meet your expectations but exceed them, ensuring perfection in every detail.
+                </p>
+            </div>
+            <!-- Creativity Column -->
+            <div class="col-md-4 mb-4">
+                <h3 style="color:#506a85;">
+                    <i class="fas fa-lightbulb text-success" ></i> Creativity
+                </h3>
+                <p>
+                    Our team brings innovative ideas to the table, ensuring that your project stands out with unique, creative solutions.
+                </p>
+            </div>
+            <!-- Quality Column -->
+            <div class="col-md-4 mb-4">
+                <h3 style="color:#506a85;">
+                    <i class="fas fa-star text-success"></i> Quality
+                </h3>
+                <p>
+                    We strive for excellence in every aspect, delivering high-quality designs and services that guarantee satisfaction.
+                </p>
+            </div>
+        </div>
     </div>
-</div>
 
-
+    <div class="bg-light py-5" style="background-color: #f1f5f7;">
+        <div class="container text-center">
+            <!-- Heading and Paragraph -->
+            <h2 class="mb-4" style="color:#506a85;">Check Out Our Letest Work</h2>
+            <p class="lead mb-5">
+                Discover our diverse range of projects showcasing our expertise and creativity.
+            </p>
+    
+            <!-- Grid for Two Images with Titles -->
+            <div class="row mb-5">
+                <div class="col-md-6 mb-4">
+                    <div class="position-relative">
+                        <img src="background-image.jpg" class="img-fluid" alt="Image 1">
+                        <div class="position-absolute bottom-0 start-0 w-100 bg-white text-white text-center py-2">
+                            <h5 class="m-0" style="color:#506a85;">Title 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="position-relative">
+                        <img src="background-image.jpg" class="img-fluid" alt="Image 2">
+                        <div class="position-absolute bottom-0 start-0 w-100 bg-white text-white text-center py-2">
+                            <h5 class="m-0" style="color:#506a85;">Title 2</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Four Images Below -->
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <img src="background-image.jpg" class="img-fluid" alt="Image 3">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="background-image.jpg" class="img-fluid" alt="Image 4">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="background-image.jpg" class="img-fluid" alt="Image 5">
+                </div>
+                <div class="col-md-3 mb-4">
+                    <img src="background-image.jpg" class="img-fluid" alt="Image 6">
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
